@@ -1,0 +1,25 @@
+/* Ghost element of 60px; upon clicking brand logo the head of the female wont be cutted */
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* only after md screen size and above; email input will take 50% of the original size  */
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #map {
+    width: 100%;
+    height: 50vh;
+  }
+}

@@ -1,0 +1,29 @@
+Asynchronous JS and XML
+send and receive data asynchronously 
+json has replaced xml mostly 
+works with plain text too 
+reloads only a part from the html without reloading the whole page
+
+how it works: 
+1. js call to ajax engine 
+2. xmlhttprequest to server
+3. server sends json to ajax
+4. ajax to browser: html 
+
+XHR Object: 
+api in form of an object 
+provided by browser js enviroment 
+methods to transfer data between client-server
+can use with other protocols than http 
+can work with other types of data xml, json, plain text
+
+Libraries and other methods: 
+jquery - overkill mostly 
+axios 
+superagent 
+fetchAPI - part of the browser 
+NodeHTTP
+
+
+
+

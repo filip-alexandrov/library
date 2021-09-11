@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.sandbox.min.js"
+      integrity="sha512-QP10qBx5l3cM2RowxREl3Gr+RT//mYRaSJuH+HiQ4yz7ohuQ7pIMP1/oDvS8HUqVuaSxr7Jo3oJJNOdMvUv37g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.9.359/build/pdf.min.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <button class="btn" id="prev-page">
+        <i class="fas fa-arrow-circle-left"> </i>Prev Page
+      </button>
+      <button class="btn" id="next-page">
+        Next Page
+        <i class="fas fa-arrow-circle-right"> </i>
+      </button>
+      <span class="page-info"
+        >Page <span id="page-num"></span> of <span id="page-count"></span
+      ></span>
+    </div>
+
+    <canvas id="pdf-render"></canvas>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
