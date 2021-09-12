@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materialize Cheat Sheet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- like in bootstrap the container will align/ put to the center and add margins to the elements inside -->
+    <div class="container">
+      <h1>COLORS</h1>
+      <div class="red white-text">Div with color class</div>
+      <div class="blue darken-2 white-text">Div with color class</div>
+      <div class="deep-purple lighten-3 blue-text">Div with color class</div>
+
+      <h1>BUTTONS</h1>
+      <button class="btn">Read More</button>
+      <button class="btn waves-effect waves-light">Read More</button>
+      <button class="btn btn-large">Read More</button>
+      <button class="btn btn-large disabled">Read More</button>
+      <button class="btn btn-large red darken-3 white-text">Read More</button>
+      <button class="btn btn-large green">Read More</button>
+      <button class="btn btn-large purple">Read More</button>
+      <button class="btn btn-large yellow black-text">Read More</button>
+      <button class="btn btn-large brown">
+        <i class="material-icons left">cloud</i> Read More
+      </button>
+
+      <!-- Floating Button -->
+      <a href="" class="btn-floating red btn-large"
+        ><i class="large material-icons">add</i></a
+      >
+
+      <!-- Fixed Action Button -->
+      <div class="fixed-action-btn">
+        <a href="" class="btn-floating red btn-large"
+          ><i class="large material-icons">mode_edit</i></a
+        >
+        <ul>
+          <li>
+            <a href="" class="btn-floating yellow"
+              ><i class="large material-icons">insert_chart</i></a
+            >
+          </li>
+          <li>
+            <a href="" class="btn-floating blue"
+              ><i class="large material-icons">format_quote</i></a
+            >
+          </li>
+          <li>
+            <a href="" class="btn-floating green"
+              ><i class="large material-icons">publish</i></a
+            >
+          </li>
+          <li>
+            <a href="" class="btn-floating orange"
+              ><i class="large material-icons">attach_file</i></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- FLAT BUTTON -->
+      <a href="" class="waves-effect waves-teal btn-flat waves-tea">Button</a>
+
+      <h1>Helpers</h1>
+      <!-- ALIGNMENT -->
+      <div>
+        <h5 class="left-align">This aligns to the left</h5>
+        <h5 class="right-align">This aligns to the right</h5>
+        <h5 class="center-align">This aligns to the center</h5>
+      </div>
+
+      <!-- QUICK FLOATS -->
+      <div class="left">Left Float</div>
+      <div class="right">Right Float</div>
+
+      <!-- CLEAR -->
+      <div class="clearfix"></div>
+
+      <!-- HIDE CONTENT -->
+      <div class="hide">Hidden for all devices</div>
+      <div class="hide-on-small-only">Hidden for mobile devices</div>
+      <div class="hide-on-med-only">Hidden for tablets only</div>
+      <div class="hide-on-med-and-down">HIdden for tablets and smaller</div>
+      <div class="hide-on-med-and-up">Hidden for tablets and higher</div>
+      <div class="hide-on-large-only">Hidden for desktops</div>
+
+      <!-- TRUNCATE -->
+      <h4 class="truncate">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolorum
+        nesciunt a eveniet ea laborum quisquam itaque aliquid unde provident.
+      </h4>
+
+      <!-- EFFECTS -->
+
+      <!-- HOVERABLE -->
+      <div class="red white-text hoverable">Hoverable content</div>
+      <!-- PULSE -->
+      <div class="blue white-text _pulse">
+        Pulse content (disabled for convinience)
+      </div>
+      <!-- SHADOWS -->
+      <p class="z-depth-1">z-depth-1</p>
+      <p class="z-depth-2">z-depth-2</p>
+      <p class="z-depth-3">z-depth-3</p>
+      <p class="z-depth-4">z-depth-4</p>
+      <p class="z-depth-5">z-depth-5</p>
+      <!-- FLOW TEXT -->
+      <p class="flow-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        saepe rerum at numquam amet laboriosam dolorem dignissimos corrupti
+        facilis dolore.
+      </p>
+
+      <!-- IMAGES -->
+      <img
+        src="https://s3.amazonaws.com/files.dpreview.com/sample_galleries/1330372094/0455063184.jpg?X-Amz-Expires=3600&x-amz-security-token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDqFo72o2c%2F%2FspuwFxsa905kh%2B4cE7E35q6I55iJqQgwgIhAPO82V0qG22VRAFXdhcviBtUtPva8Lit8WqtVwSb7I5JKvoDCBMQABoMODUzNjA3MDkxODAzIgzPac%2BQN%2BttXqqZBDIq1wPqe8cGE2kDtoA71aEoyESEQIVgx2Lsbwrus7w5WHGV5Ebnup3oGNWkAUbxxpiyCyGJ2J0bWvXB2yIknkEl7V4CzDirrF1biOcVGPoncw1cro7DAU5JNbgFPvs8GmyhAKurlNk09m0nPS1WaBDQFM%2F1aFKoHY1tJQME85o25FPzsXpeAs5Y1WrBI%2FZ87OAgHAQmbzGORQVuI4JGl1VNlf7UFFEeaA9eT3h3VNRPHeDGL3H2K6gx8lzSCsUC9w%2F0M7z2X8TWnZKb%2FkeMVSZrcf81mQDuik8bj727s0mSUv6NW0uWhjtvzh8pUGH81njO5v8xTF53WGhrNKND27GhnE7gW10TTokIzb7Ej6WuWS8QFu7KEKPgNDWYAcT6MHaa93ku82lVx5Vs%2B3PildThDFKzW7d%2Bvk0PUBvk8PuDB7p74PBO9uPaaBH08I7H5m3vIalE0HiFHSTfuxYOidV4xbGGK1ID2SVtLpSNH7Of4BGtmw8bPT1iT2JOdcurNplKbJlhMPzOUvBhIF2uSTfQ5aoZfr7l%2BYuRjQZtZe6nDzI1K1cJNsshAYUOVNPcl0jjRF8toZaPNAIbsfAzttl5h644HzUCOvekcxONdb8gEhzPX8fN0RV8YvkwyaD3iQY6pAHY3B7b%2FFWz5KojKqZyPH%2By0EGMvnQ4rHLV4ZFhERyqlRATCJevLQT0nov%2BY36%2BJSiF2ANmqghMgjhSovTVLF%2BPA63yrt5sR7hfNBBviZvNSjuouyFaKf1pkLF6erZu0uRqY%2BNL7QTvgw3LlkwmsYxKMVk7iNx1jSXuUjSJuvxA2ke8Vbd5MaFMLql44Dw0jDIuzxOKZAuatPwDJDDc6SoQqOyBEA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA4NPXSRZNVSNBJYDH/20210912/us-east-1/s3/aws4_request&X-Amz-Date=20210912T104608Z&X-Amz-SignedHeaders=host;x-amz-security-token&X-Amz-Signature=38120ffed063f7a043c7b05a0e3b0843cd3e572b2cb554116cb44bda1cd7b855"
+        alt=""
+        class="responsive-img"
+      />
+
+      <img
+        src="https://s3.amazonaws.com/files.dpreview.com/sample_galleries/1330372094/0455063184.jpg?X-Amz-Expires=3600&x-amz-security-token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDqFo72o2c%2F%2FspuwFxsa905kh%2B4cE7E35q6I55iJqQgwgIhAPO82V0qG22VRAFXdhcviBtUtPva8Lit8WqtVwSb7I5JKvoDCBMQABoMODUzNjA3MDkxODAzIgzPac%2BQN%2BttXqqZBDIq1wPqe8cGE2kDtoA71aEoyESEQIVgx2Lsbwrus7w5WHGV5Ebnup3oGNWkAUbxxpiyCyGJ2J0bWvXB2yIknkEl7V4CzDirrF1biOcVGPoncw1cro7DAU5JNbgFPvs8GmyhAKurlNk09m0nPS1WaBDQFM%2F1aFKoHY1tJQME85o25FPzsXpeAs5Y1WrBI%2FZ87OAgHAQmbzGORQVuI4JGl1VNlf7UFFEeaA9eT3h3VNRPHeDGL3H2K6gx8lzSCsUC9w%2F0M7z2X8TWnZKb%2FkeMVSZrcf81mQDuik8bj727s0mSUv6NW0uWhjtvzh8pUGH81njO5v8xTF53WGhrNKND27GhnE7gW10TTokIzb7Ej6WuWS8QFu7KEKPgNDWYAcT6MHaa93ku82lVx5Vs%2B3PildThDFKzW7d%2Bvk0PUBvk8PuDB7p74PBO9uPaaBH08I7H5m3vIalE0HiFHSTfuxYOidV4xbGGK1ID2SVtLpSNH7Of4BGtmw8bPT1iT2JOdcurNplKbJlhMPzOUvBhIF2uSTfQ5aoZfr7l%2BYuRjQZtZe6nDzI1K1cJNsshAYUOVNPcl0jjRF8toZaPNAIbsfAzttl5h644HzUCOvekcxONdb8gEhzPX8fN0RV8YvkwyaD3iQY6pAHY3B7b%2FFWz5KojKqZyPH%2By0EGMvnQ4rHLV4ZFhERyqlRATCJevLQT0nov%2BY36%2BJSiF2ANmqghMgjhSovTVLF%2BPA63yrt5sR7hfNBBviZvNSjuouyFaKf1pkLF6erZu0uRqY%2BNL7QTvgw3LlkwmsYxKMVk7iNx1jSXuUjSJuvxA2ke8Vbd5MaFMLql44Dw0jDIuzxOKZAuatPwDJDDc6SoQqOyBEA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA4NPXSRZNVSNBJYDH/20210912/us-east-1/s3/aws4_request&X-Amz-Date=20210912T104608Z&X-Amz-SignedHeaders=host;x-amz-security-token&X-Amz-Signature=38120ffed063f7a043c7b05a0e3b0843cd3e572b2cb554116cb44bda1cd7b855"
+        alt=""
+        class="responsive-img circle"
+      />
+
+      <!-- container  -->
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="nav-wrapper blue">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br /><br />
+
+    <nav>
+      <div class="nav-wrapper red">
+        <a href="#" class="brand-logo right">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br /><br />
+    <!-- CENTERED LOGO -->
+    <nav>
+      <div class="nav-wrapper green">
+        <a href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br /><br />
+
+    <!-- DROPDOWN -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="sass.html">Sass</a>
+          </li>
+          <li>
+            <a href="badges.html">Components</a>
+          </li>
+          <!-- Dropdown Trigger -->
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Dropdown
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+            <ul id="dropdown1" class="dropdown-content" tabindex="0" style="">
+              <li tabindex="0">
+                <a href="#!">one</a>
+              </li>
+              <li tabindex="0">
+                <a href="#!">two</a>
+              </li>
+              <li class="divider" tabindex="0"></li>
+              <li tabindex="0">
+                <a href="#!">three</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br /><br />
+
+    <!-- ICONS AND BUTTONS IN NAV -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href=""
+              ><i class="material-icons left">search</i>Link with Left Icon</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="material-icons right">view_module</i>Link with Right
+              Icon</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br /><br />
+
+    <!--     SEARCH BAR -->
+    <nav>
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required />
+            <label class="label-icon" for="search"
+              ><i class="material-icons">search</i></label
+            >
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <br /><br />
+    <!-- MOBILE COLLAPSE -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+
+    <div class="container">
+      <h1>Collections/Lists</h1>
+      <ul class="collection">
+        <li class="collection-item">Item 1</li>
+        <li class="collection-item">Item 2</li>
+        <li class="collection-item">Item 3</li>
+        <li class="collection-item">Item 4</li>
+      </ul>
+
+      <div class="collection">
+        <a href="" class="collection-item">Link 1</a>
+        <a href="" class="collection-item">Link 2</a>
+        <a href="" class="collection-item">Link 3</a>
+        <a href="" class="collection-item">Link 4</a>
+      </div>
+    </div>
+
+    <!-- WITH HEADER -->
+    <ul class="collection with-header">
+      <li class="collection-item"><h4>Header</h4></li>
+      <li class="collection-item">Item 1</li>
+      <li class="collection-item">Item 2</li>
+      <li class="collection-item">Item 3</li>
+    </ul>
+
+    <ul class="collection with-header">
+      <li class="collection-item avatar valign-wrapper">
+        <i class="material-icons circle justify-content-center">folder</i>
+
+        <p>
+          <span class="title">Header</span><br />
+          First Line <br />
+          Second Line
+        </p>
+        <a href="" class="secondary-content"
+          ><i class="material-icons">grade</i></a
+        >
+      </li>
+      <li class="collection-item">Item 1</li>
+      <li class="collection-item">Item 2</li>
+      <li class="collection-item">Item 3</li>
+    </ul>
+
+    <h1>Pagination</h1>
+    <ul class="pagination">
+      <li class="disabled">
+        <a href=""><i class="material-icons">chevron_left</i></a>
+      </li>
+      <li class="active"><a href="">1</a></li>
+      <li class="waves-effect"><a href="">2</a></li>
+      <li class="waves-effect"><a href="">3</a></li>
+      <li class="waves-effect"><a href="">4</a></li>
+      <li class="waves-effect"><a href="">5</a></li>
+      <li class="waves-effect"><a href="">6</a></li>
+      <li class="waves-effect"><a href="">7</a></li>
+      <li class="waves-effect">
+        <a href=""><i class="material-icons">chevron_right</i></a>
+      </li>
+    </ul>
+
+    <div class="container">
+      <h1>Breadcrumbs</h1>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="" class="breadcrumb">First</a>
+            <a href="" class="breadcrumb">Second</a>
+            <a href="" class="breadcrumb">Third</a>
+          </div>
+        </div>
+      </nav>
+
+      <h1>Cards</h1>
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span
+          ><a
+            href=""
+            class="btn-floating halfway-fab waves-effect waves-light red"
+            ><i class="material-icons">add</i></a
+          >
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+            blanditiis aut aliquam ea dicta commodi facere nihil culpa officia
+            accusantium.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="">Link 1</a>
+          <a href="">Link 2</a>
+        </div>
+      </div>
+
+      <h1>Image Card</h1>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg" />
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>
+            I am a very simple card. I am good at containing small bits of
+            information. I am convenient because I require little markup to use
+            effectively.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+
+      <h1>Horizontal Card</h1>
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="https://lorempixel.com/100/190/nature/6" />
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>
+              I am a very simple card. I am good at containing small bits of
+              information.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+
+      <h1>Card Panel</h1>
+      <div class="card-panel teal">
+        <span class="white-text"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad
+          blanditiis eos natus odio, ullam et enim consequuntur voluptatibus
+          quidem!</span
+        >
+      </div>
+
+      <h1>Chips</h1>
+      <div class="chip">Tag 1 <i class="close material-icons">close</i></div>
+      <div class="chip">Tag 2 <i class="close material-icons">close</i></div>
+
+      <h1>Forms</h1>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name" /><label for="name" class="active"
+            >Name</label
+          >
+        </div>
+
+        <div class="input-field">
+          <input type="email" id="email" class="validate" /><label
+            for="email"
+            class="active"
+            >Email</label
+          >
+        </div>
+        <div class="input-field">
+          <textarea
+            id="textarea"
+            class="materialize-textarea"
+            rows="2"
+          ></textarea>
+          <label for="textarea" class="active"></label>
+        </div>
+      </form>
+
+      <h1>Preloaders</h1>
+      <div class="progress">
+        <div class="determinate" style="width: 70%"></div>
+      </div>
+
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Grid System</h1>
+      <div class="row">
+        <div class="col s1"><div class="card-panel grey">1</div></div>
+        <div class="col s1"><div class="card-panel grey">2</div></div>
+        <div class="col s1"><div class="card-panel grey">3</div></div>
+        <div class="col s1"><div class="card-panel grey">4</div></div>
+        <div class="col s1"><div class="card-panel grey">5</div></div>
+        <div class="col s1"><div class="card-panel grey">6</div></div>
+        <div class="col s1"><div class="card-panel grey">7</div></div>
+        <div class="col s1"><div class="card-panel grey">8</div></div>
+        <div class="col s1"><div class="card-panel grey">9</div></div>
+        <div class="col s1"><div class="card-panel grey">10</div></div>
+        <div class="col s1"><div class="card-panel grey">11</div></div>
+        <div class="col s1"><div class="card-panel grey">12</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col s8"><div class="card-panel grey">8</div></div>
+        <div class="col s4"><div class="card-panel grey">4</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col s4"><div class="card-panel grey">4</div></div>
+        <div class="col s4"><div class="card-panel grey">4</div></div>
+        <div class="col s4"><div class="card-panel grey">4</div></div>
+      </div>
+
+      <h1>Offsetting</h1>
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel grey">This div is 12 cols</div>
+        </div>
+        <div class="col s6 offset-s6">
+          <div class="card-panel grey">This div is 6 cols, offset by 6</div>
+        </div>
+      </div>
+
+      <h1>Push and pull</h1>
+      <div class="row">
+        <div class="col s7 push-s5">
+          <div class="card-panel grey">
+            This div is (first in markup) 7 cols wide
+          </div>
+        </div>
+        <div class="col s5 pull-s7">
+          <div class="card-panel grey">This div is 5 cols wide</div>
+        </div>
+      </div>
+
+      <!-- container end -->
+    </div>
+
+    <div style="height: 300px; width: 300px"></div>
+  </body>
+  <script src="materialize.js"></script>
+  <script src="script.js"></script>
+</html>
