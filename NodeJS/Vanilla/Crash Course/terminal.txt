@@ -1,0 +1,9 @@
+* (node is runned from vscode terminal)
+* npm init => to initialize package.json (stores all dependencies,
+ retrieved on another computer trough npm install; node_modules folder not needed)
+* npm install uuid (install uuid dependency)
+* npm install --save-dev nodemon => wont be added when later run npm install
+ on another computer
+* package-lock.json tracks all dependencies with versions
+* node index.js => runs a file in the terminal 
+* node.exports=person in person.js; const person = reqire('./person') => to use another file
